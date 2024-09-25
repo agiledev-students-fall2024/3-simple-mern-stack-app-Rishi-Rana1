@@ -78,5 +78,13 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+app.get('/userdata', (req, res) => {
+  res.json({
+    name: "Hi, my name's Rishi",
+    bio: "I am a Junior at NYU studying Computer Science. I am a software engineer and I love to code. I was perviously an SDE intern at United Health Group and learned a lot about how to code properly in the industry. I wish to get an internship in big tech or banking this Summer.",
+    image: "https://hacknyu.org/static/media/Rana,%20Rishi.f22db3435b4c0b5c18bc.png"
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
